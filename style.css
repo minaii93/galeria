@@ -1,4 +1,38 @@
 main{
-    
+    padding: 20px; 
+    background-color: #f8f9fa; 
 
+}
+
+
+.kepTarolo {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.kisKep {
+    margin: 10px; 
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden; 
+    background-color: #fff; 
+    transition: transform 0.2s; 
+}
+
+.kisKep:hover {
+    transform: scale(1.05); 
+}
+
+.img-body {
+    padding: 10px; 
+}
+
+.img-title {
+    font-size: 1.2em;
+    font-weight: bold; 
+}
+
+.img-leir {
+    color: #6c757d; 
 }

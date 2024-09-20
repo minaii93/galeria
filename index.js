@@ -10,4 +10,4 @@ const kivElem = $(".kisKepek");
 
 new Jatekter(kepekLista,divElem);
 
-$(window).on("kivalaszt")
+// $(window).on("kivalaszt")

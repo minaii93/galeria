@@ -19,12 +19,7 @@ export const kepekLista = [
         cim : "kep1", 
         leiras: "Lorem ipsum", 
         eleresiUt: "/kepek/wolfgang-hasselmann-ULfobILrTpM-unsplash.jpg"
-    },
-    {
-        cim : "kep1", 
-        leiras: "Lorem ipsum", 
-        eleresiUt: "/kepek/zosia-szopka-j5HQf4MpXZQ-unsplash.jpg"
-    },
+    }
  
 
 
