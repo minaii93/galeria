@@ -6,17 +6,20 @@ constructor(kep, szuloElem) {
     this.#kep = kep;
     this.szuloElem = szuloElem;
     this.#kepLetrehoz();
-    this.#esemenyKezelo();
+    this.#esemenyKezelo(kattint);
     
     
 };
 
-#esemenyKezelo(){
+#esemenyKezelo(kattint){
+    this.szuloElem.find('.kisKep').on('click', () => {
+       kattint(this.#kep);
+    });
 
-};
+}
 
 #kepLetrehoz(){
-    this.szuloElem.append(`<div class="col-lg-4 col-md-3", col-sm2, col-xs-1>
+    this.szuloElem.append(`<div class="col-lg-3 col-md-4", col-sm6>
         <div class = "kisKep">
             <div class= "img-body">
             <h3 class= "img-title">${this.#kep.cim}</h3>
