@@ -1,4 +1,5 @@
-import {kepek} from "./kepek.js";
+
+import { kepekLista } from './kepek.js';
 
 import jatekter from "./jatekter.js";
 

@@ -1,4 +1,4 @@
-export const kepek = [
+export const kepekLista = [
 
     {
         cim : "kep1", 
@@ -6,7 +6,7 @@ export const kepek = [
         eleresiUt: "/kepek/filipe-freitas-TV0JFWli5gs-unsplash.jpg"
     },
     {
-        cim : "kep1", 
+        cim : "kep2", 
         leiras: "Lorem ipsum", 
         eleresiUt: "/kepek/jimmy-woo-5MbZgUmzGg0-unsplash.jpg"
     },
