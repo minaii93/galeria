@@ -16,7 +16,7 @@ new Jatekter(kepekLista,divElem);
     console.log(event.detail);
     kivalasztottKep.push(event.detail);
     console.log(kivalasztottKep);
-    divElem.empty();
+    // kivElem.empty();
     new Kartya(kivalasztottKep,divElem);
  }
 )

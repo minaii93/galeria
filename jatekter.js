@@ -9,7 +9,6 @@ export default class Jatekter{
 #kisKepekLista = [];
 constructor(kisKepekLista, szuloElem){
     this.#kisKepekLista = kisKepekLista;
-
     this.szuloElem = szuloElem;
     this.szuloElem.empty();
 
@@ -19,7 +18,7 @@ constructor(kisKepekLista, szuloElem){
 #kartyaMutat(){
     this.#kisKepekLista.forEach((kep) => {
 
-        new Kartya (kep, this.szuloElem, true)
+        new Kartya (kep, this.szuloElem)
     });
 };
 };
