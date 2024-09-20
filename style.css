@@ -16,6 +16,13 @@ main{
    
 }
 
+.kepTarolo img{
+    height: 500px;        
+    object-fit: cover;    
+    width: 100%;   
+    object-position: bottom; 
+}
+
 .kisKep {
     margin: 10px; 
     border: 1px solid #dee2e6;
@@ -59,3 +66,4 @@ main{
 .img-leir {
     color: #6c757d; 
 }
+

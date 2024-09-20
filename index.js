@@ -1,22 +1,22 @@
 
-import { kepekLista } from './kepek.js';
 
+import { kepekLista } from './kepek.js';
 import Jatekter from './jatekter.js';
 import Kartya from './Kartya.js';
 
 
-const kivalasztottKep = [];
 
 const divElem = $(".kepTarolo");
 const kivElem = $(".kisKepek");
 
-new Jatekter(kepekLista,divElem);
+new Jatekter(kepekLista, divElem);
 
- $(window).on("image", (event)=>{
-    console.log(event.detail);
-    kivalasztottKep.push(event.detail);
-    console.log(kivalasztottKep);
-    // kivElem.empty();
-    new Kartya(kivalasztottKep,divElem);
- }
-)
+
+$(window).on("image", (event) => {
+    const kivalasztottKep = event.detail;
+    console.log("Kiválasztott kép:", kivalasztottKep);
+
+    
+    kivElem.empty();
+    new Kartya(kivalasztottKep, kivElem, false);
+});

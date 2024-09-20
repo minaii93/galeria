@@ -5,20 +5,19 @@
 
 import Kartya from "./Kartya.js";
 
-export default class Jatekter{
-#kisKepekLista = [];
-constructor(kisKepekLista, szuloElem){
-    this.#kisKepekLista = kisKepekLista;
-    this.szuloElem = szuloElem;
-    this.szuloElem.empty();
+export default class Jatekter {
+    #kisKepekLista = [];
 
-    this.#kartyaMutat();
+    constructor(kisKepekLista, szuloElem) {
+        this.#kisKepekLista = kisKepekLista;
+        this.szuloElem = szuloElem;
+        this.szuloElem.empty();
+        this.#kartyaMutat();
+    }
+
+    #kartyaMutat() {
+        this.#kisKepekLista.forEach((kep) => {
+            new Kartya(kep, this.szuloElem, true); 
+        });
+    }
 }
-
-#kartyaMutat(){
-    this.#kisKepekLista.forEach((kep) => {
-
-        new Kartya (kep, this.szuloElem)
-    });
-};
-};
