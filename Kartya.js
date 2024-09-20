@@ -12,9 +12,12 @@ constructor(kep, szuloElem, esemenyKezelo) {
 };
 
 #esemenyKezelo(){
-    this.szuloElem.find('.kisKep:last').on('click', () => {
+    this.szuloElem.find('.image:last').on('click', () => {
        
        console.log(this);
+
+       const e = new CustomEvent("image", {detail:this.#kep});
+       window.dispatchEvent(e);
     });
 
 }

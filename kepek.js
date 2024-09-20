@@ -11,12 +11,12 @@ export const kepekLista = [
         eleresiUt: "/kepek/jimmy-woo-5MbZgUmzGg0-unsplash.jpg"
     },
     {
-        cim : "kep1", 
+        cim : "kep3", 
         leiras: "Lorem ipsum", 
         eleresiUt: "/kepek/taryn-kaahanui-ECzqBXclKhQ-unsplash.jpg"
     },
     {
-        cim : "kep1", 
+        cim : "kep4", 
         leiras: "Lorem ipsum", 
         eleresiUt: "/kepek/wolfgang-hasselmann-ULfobILrTpM-unsplash.jpg"
     }

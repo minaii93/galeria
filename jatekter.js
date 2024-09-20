@@ -19,7 +19,7 @@ constructor(kisKepekLista, szuloElem){
 #kartyaMutat(){
     this.#kisKepekLista.forEach((kep) => {
 
-        new Kartya (kep, this.szuloElem)
+        new Kartya (kep, this.szuloElem, true)
     });
 };
 };
