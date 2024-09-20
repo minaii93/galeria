@@ -1,6 +1,7 @@
 main{
     padding: 20px; 
     background-color: #f8f9fa; 
+    justify-content: center;
 
 }
 
@@ -9,6 +10,10 @@ main{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
+    width: 700px;
+    align-items: center;
+    margin: 0 auto;
+   
 }
 
 .kisKep {
@@ -18,7 +23,23 @@ main{
     overflow: hidden; 
     background-color: #fff; 
     transition: transform 0.2s; 
+   
 }
+
+.kisKep img {
+    height: 150px;        
+    object-fit: cover;    
+    width: 100%;   
+    object-position: bottom;       
+    
+}
+
+.kisKep h3, .kisKep p {
+    display: none !important;
+}
+
+
+
 
 .kisKep:hover {
     transform: scale(1.05); 
@@ -26,6 +47,8 @@ main{
 
 .img-body {
     padding: 10px; 
+   
+
 }
 
 .img-title {
