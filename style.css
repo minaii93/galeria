@@ -10,7 +10,7 @@ main{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
-    width: 700px;
+    max-width: fit-content;
     align-items: center;
     margin: 0 auto;
    

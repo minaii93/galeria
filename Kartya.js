@@ -6,20 +6,21 @@ constructor(kep, szuloElem, esemenyKezelo) {
     this.#kep = kep;
     this.szuloElem = szuloElem;
     this.#kepLetrehoz();
-    this.#esemenyKezelo(esemenyKezelo);
+    this.#esemenyKezelo();
     
     
 };
 
-#esemenyKezelo(kattint){
-    this.szuloElem.find('.kisKep').on('click', () => {
-       kattint(this.#kep);
+#esemenyKezelo(){
+    this.szuloElem.find('.kisKep:last').on('click', () => {
+       
+       console.log(this);
     });
 
 }
 
 #kepLetrehoz(){
-    this.szuloElem.append(`<div class="col-lg-3 col-md-4 col-sm6">
+    this.szuloElem.append(`<div class="col-lg-3 col-md-4 col-sm6 col-xs12">
         <div class = "kisKep">
             <div class= "img-body">
              <h3 class= "img-title">${this.#kep.cim}</h3>
